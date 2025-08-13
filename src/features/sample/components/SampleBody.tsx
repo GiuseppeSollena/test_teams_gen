@@ -2,6 +2,8 @@ import { FC } from "react";
 import { makeStyles, mergeClasses } from "@fluentui/react-components";
 import useSampleContext from "../hooks/UseSampleContext";
 import { SampleTable } from "../models/SampleModels";
+import useModalContext from "core/hooks/useModalContext";
+import SampleModal from "./SampleModal";
 
 const useStyles = makeStyles({
   container: {
@@ -46,6 +48,7 @@ const useStyles = makeStyles({
 const SampleBody: FC = () => {
   const styles = useStyles();
   const { data } = useSampleContext();
+  const { openModal } = useModalContext();
 
   return (
     <div className={styles.container}>
@@ -61,7 +64,9 @@ const SampleBody: FC = () => {
           <tbody>
             {data && data.length > 0 ? (
               data.map((item: SampleTable) => (
-                <tr key={item.id} className={styles.tableRow}>
+                <tr key={item.id} className={styles.tableRow} onClick={()=> {
+                  openModal(<SampleModal description={item.description} name={item.name} />)
+                }}>
                   <td
                     className={mergeClasses(
                       styles.tableCell,

@@ -9,6 +9,7 @@ import { getTheme } from "../styles/theme";
 import ApiClientProvider from "core/providers/ApiClientProvider";
 import useAppInitialization from "core/hooks/UseAppInitialization";
 import AuthProvider from "./AuthProvider";
+import ModalProvider from "core/providers/ModalProvider";
 interface AppProviderProps {
   children: ReactNode;
 }
@@ -28,7 +29,9 @@ const AppProvider: FC<AppProviderProps> = ({ children }) => {
           <I18nextProvider i18n={i18n}>
             <QueryClientProvider client={QUERY_CLIENT}>
               <FluentProvider theme={selectedTheme()}>
-                {children}
+                <ModalProvider>
+                  {children}
+                </ModalProvider>
               </FluentProvider>
             </QueryClientProvider>
           </I18nextProvider>
