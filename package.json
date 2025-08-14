@@ -17,29 +17,26 @@
     "@fluentui/react-components": "^9.57.0",
     "@fluentui/react-datepicker-compat": "^0.4.61",
     "@fluentui/react-icons": "^2.0.271",
-    "@hookform/resolvers": "^5.2.1",
     "@microsoft/teams-js": "^2.22.0",
     "@microsoft/teamsfx": "^3.0.0",
     "@microsoft/teamsfx-react": "^4.0.0",
     "@tanstack/react-query": "^5.66.9",
     "framer-motion": "^12.4.7",
-    "jwt-decode": "^4.0.0",
+    "@hookform/resolvers": "^5.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.55.0",
     "react-i18next": "^15.4.1",
     "react-router-dom": "^7.1.3",
-    "react-textarea-autosize": "^8.5.9",
     "uuid": "^11.0.5",
-    "zod": "^4.0.17"
+    "jwt-decode": "^4.0.0",
+    "react-textarea-autosize": "^8.5.9",
+    "react-hook-form": "^7.55.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
-    "concurrently": "^8.2.2",
-    "env-cmd": "^10.1.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -50,6 +47,8 @@
     "vite": "^6.2.0",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^3.0.9"
+    "vitest": "^3.0.9",
+    "concurrently": "^8.2.2",
+    "env-cmd": "^10.1.0"
   }
 }

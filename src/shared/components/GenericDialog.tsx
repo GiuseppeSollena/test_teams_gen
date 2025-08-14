@@ -11,7 +11,7 @@ import {
     mergeClasses,
     tokens,
 } from "@fluentui/react-components";
-import useModalContext from "core/hooks/useModalContext";
+import useModalContext from "core/hooks/UseModalContext";
 import React, { ReactNode } from "react";
 import { CloseDialogIcon } from "shared/assets/icons/CloseDialogIcon";
 

@@ -18,7 +18,7 @@ const AuthProvider: FC<AuthProviderProps> = ({ cred, children }) => {
 
   const isError = useMemo(() => !loading && !token, [loading, token]);
 
-  const useAuth = false //(import.meta.env.VITE_USE_AUTH ?? "true") === "true"; //TODO aggiungere in .env
+  const useAuth = true //(import.meta.env.VITE_USE_AUTH ?? "true") === "true"; //TODO aggiungere in .env
   const initialize_teams_sdk = useCallback(
     () => {
       return microsoftTeams.app.initialize()

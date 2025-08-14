@@ -6,7 +6,7 @@ import {
     FieldErrors,
     FieldValues,
     UseFormRegister,
-    UseFormTrigger
+    UseFormTrigger,
 } from "react-hook-form";
 import { Trans } from "react-i18next";
 import TextareaAutosize from "react-textarea-autosize";
